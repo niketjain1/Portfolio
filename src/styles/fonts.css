@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("/fonts/suisse/SuisseIntl-Regular-WebS.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("/fonts/suisse/SuisseIntl-Medium-WebS.woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("/fonts/suisse/SuisseIntl-SemiBold-WebS.woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SuisseIntlCond";
+  src: url("/fonts/suisse/SuisseIntlCond-Bold-WebS.woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/Inter/Inter.var.woff2");
+  font-named-instance: "Regular";
+}

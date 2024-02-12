@@ -1,4 +1,6 @@
 .App {
+  height: max-content;
+  width: max-content;
   text-align: center;
 }
 
