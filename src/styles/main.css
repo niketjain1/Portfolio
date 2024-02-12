@@ -1,0 +1,272 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .title-base {
+    font-family: "SuisseIntl", "system-ui";
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+  }
+
+  .title-serif {
+    font-family: "Messina", "ui-serif";
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+  }
+  .subtitle-lg {
+    font-family: "SuisseIntl", "ui-sans-serif", "system-ui";
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  .subtitle-base {
+    font-family: "SuisseIntl", "ui-sans-serif", "system-ui";
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+
+  .subtitle-xs {
+    font-family: "SuisseIntl", "ui-sans-serif", "system-ui";
+    font-weight: 600;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+  }
+
+  .body-base-light {
+    font-family: "Inter var", "ui-sans-serif", "system-ui";
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .body-base-regular {
+    font-family: "Inter var", "ui-sans-serif", "system-ui";
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .body-base-medium {
+    font-family: "Inter var", "ui-sans-serif", "system-ui";
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .body-base-semibold {
+    font-family: "Inter var", "ui-sans-serif", "system-ui";
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .body-sm {
+    font-family: "Inter var", "ui-sans-serif", "system-ui";
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+  .body-sm-regular {
+    font-family: "Inter var", "ui-sans-serif", "system-ui";
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+  .body-sm-medium {
+    font-family: "Inter var", "ui-sans-serif", "system-ui";
+    font-weight: 500;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+  .body-sm-semibold {
+    font-family: "Inter var", "ui-sans-serif", "system-ui";
+    font-weight: 600;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+
+  .body-md-regular {
+    font-family: "Inter var", "ui-sans-serif", "system-ui";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+
+  .body-md-medium {
+    font-family: "Inter var", "ui-sans-serif", "system-ui";
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+
+  .body-md-semibold {
+    font-family: "Inter var", "ui-sans-serif", "system-ui";
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+
+  .catalog-onboard-form-title {
+    font-size: 48px;
+    font-family: "SuisseIntlCond", "ui-sans-serif", "system-ui";
+    font-weight: 700;
+    line-height: 2.875rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .title-base {
+      font-family: "SuisseIntl", "ui-sans-serif", "system-ui";
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 2.625rem;
+    }
+
+    .title-serif {
+      font-family: "Messina", "ui-serif";
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 2.625rem;
+    }
+
+    .subtitle-lg {
+      font-family: "SuisseIntl", "ui-sans-serif", "system-ui";
+      font-weight: 400;
+      font-size: 1.375rem;
+      line-height: 1.875rem;
+    }
+
+    .subtitle-base {
+      font-family: "SuisseIntl", "ui-sans-serif", "system-ui";
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+    }
+
+    .subtitle-xs {
+      font-family: "SuisseIntl", "ui-sans-serif", "system-ui";
+      font-weight: 600;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      text-transform: uppercase;
+    }
+
+    .body-base-light {
+      font-family: "Inter var", "ui-sans-serif", "system-ui";
+      font-weight: 300;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    .body-base-regular {
+      font-family: "Inter var", "ui-sans-serif", "system-ui";
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    .body-base-medium {
+      font-family: "Inter var", "ui-sans-serif", "system-ui";
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    .body-base-semibold {
+      font-family: "Inter var", "ui-sans-serif", "system-ui";
+      font-weight: 600;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    .body-sm {
+      font-family: "Inter var", "ui-sans-serif", "system-ui";
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+    }
+    .body-sm-regular {
+      font-family: "Inter var", "ui-sans-serif", "system-ui";
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+    }
+    .body-sm-medium {
+      font-family: "Inter var", "ui-sans-serif", "system-ui";
+      font-weight: 500;
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+    }
+    .body-sm-semibold {
+      font-family: "Inter var", "ui-sans-serif", "system-ui";
+      font-weight: 600;
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+    }
+
+    .body-md-regular {
+      font-family: "Inter var", "ui-sans-serif", "system-ui";
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.375rem;
+    }
+
+    .body-md-medium {
+      font-family: "Inter var", "ui-sans-serif", "system-ui";
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.375rem;
+    }
+    .body-md-semibold {
+      font-family: "Inter var", "ui-sans-serif", "system-ui";
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.375rem;
+    }
+  }
+}
+
+.App {
+  height: max-content;
+  width: max-content;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
