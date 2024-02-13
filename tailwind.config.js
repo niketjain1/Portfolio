@@ -1056,6 +1056,11 @@ module.exports = {
       40: "40",
       50: "50",
     },
+    extend: {
+      fontFamily: {
+        Roboto: ["Roboto", "sans-serif"],
+      },
+    },
   },
   variantOrder: [
     "first",
