@@ -9,6 +9,7 @@ import { FaGithub } from "react-icons/fa6";
 import avatar from "../assets/avatar.svg";
 import ProjectCard from "./ProjectCard";
 import { IoMail } from "react-icons/io5";
+import Experience from "./Experience";
 
 const Hero = ({ sectionSelected }) => {
   useEffect(() => {
@@ -112,7 +113,7 @@ const Hero = ({ sectionSelected }) => {
       <div id="Projects" />
       <div className="border-t border-dashed w-11/12 my-12 bg-gray-600 dark:bg-gray-300" />
       <div className="flex flex-col items-center justify-center">
-        <h2 className="title-base mb-8 bg-gradient-to-b from-orange-500 to-orange-400 bg-clip-text text-transparent">
+        <h2 className="title-base mb-8 bg-gradient-to-b from-orange-300 to-orange-600 bg-clip-text text-transparent">
           Projects
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -123,53 +124,12 @@ const Hero = ({ sectionSelected }) => {
       </div>
       <div id="Experience" />
       <div className="border-t border-dashed w-11/12 my-12 bg-gray-600 dark:bg-gray-300" />
-      <div className="flex flex-col items-center justify-center">
-        <h2 className="title-base mb-8 bg-gradient-to-b from-orange-500 to-orange-400 bg-clip-text text-transparent">
-          Experience
-        </h2>
-        <p className="font-sans mt-2">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of
-          the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown
-          printer took a galley of type and scrambled it to make a type specimen
-          book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem
-          Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of
-          the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown
-          printer took a galley of type and scrambled it to make a type specimen
-          book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem
-          Ipsum
-        </p>
-      </div>
+      <Experience />
 
       <div id="Contact" />
       <div className="border-t border-dashed w-11/12 my-12 bg-gray-600 dark:bg-gray-300" />
       <div className="flex flex-col items-center justify-center">
-        <h2 className="title-base mb-8 bg-gradient-to-b from-orange-500 to-orange-400 bg-clip-text text-transparent">
+        <h2 className="title-base mb-8 bg-gradient-to-b from-green-300 to-green-600 bg-clip-text text-transparent">
           Contact
         </h2>
       </div>
