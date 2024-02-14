@@ -105,9 +105,13 @@ const Hero = ({ sectionSelected }) => {
       </div>
       <h2 className="text-red-600 title-base uppercase">Niket Jain</h2>
       <h1 className="py-3 subtitle-lg">Software Engineer</h1>
-      <p className="max-w-xl subtitle-base text-gray-500">
-        Hello welcome to my site, I am a Software Engineer, I love table tennis,
-        and coding
+      <p className="subtitle-base w-11/12 text-gray-500">
+        Hey <span className="animate-pulse text-2xl">👋</span> I am an aspiring
+        backend developer who wants to work on building tech-first solutions to
+        complex real-world problems. As a kid I loved tinkering with things that
+        were broken, figuring out how they worked, and fixing them again which
+        led to my interest to be an engineer. <br />I believe in learning by
+        doing, competitive by nature
       </p>
 
       <div id="Projects" />
