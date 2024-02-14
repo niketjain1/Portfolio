@@ -8,6 +8,7 @@ import {
 import { FaGithub } from "react-icons/fa6";
 import avatar from "../assets/avatar.svg";
 import ProjectCard from "./ProjectCard";
+import { IoMail } from "react-icons/io5";
 
 const Hero = ({ sectionSelected }) => {
   useEffect(() => {
@@ -26,19 +27,19 @@ const Hero = ({ sectionSelected }) => {
       id: 1,
       name: "Twitter",
       icon: <FaTwitter />,
-      link: "https://twitter.com/niketjain",
+      link: "https://twitter.com/niketj2000",
     },
     {
       id: 2,
       name: "LinkedIn",
       icon: <FaLinkedin />,
-      link: "https://www.linkedin.com/in/niketjain",
+      link: "https://www.linkedin.com/in/niket-j",
     },
     {
       id: 3,
       name: "Instagram",
       icon: <FaInstagram />,
-      link: "https://www.instagram.com/niketjain",
+      link: "https://www.instagram.com/niket._.j",
     },
     {
       id: 4,
@@ -46,12 +47,18 @@ const Hero = ({ sectionSelected }) => {
       icon: <FaGithub />,
       link: "https://github.com/niketjain1/",
     },
+    {
+      id: 5,
+      name: "Email",
+      icon: <IoMail />,
+      link: "mailto:niketj2000@gmail.com",
+    },
   ];
 
   const projects = [
     {
       id: 1,
-      title: "Project 1",
+      title: "Bloggerly",
       description: "Description for Project 1",
       githubLink: "https://github.com/your-username/project1",
     },
@@ -105,7 +112,9 @@ const Hero = ({ sectionSelected }) => {
       <div id="Projects" />
       <div className="border-t border-dashed w-11/12 my-12 bg-gray-600 dark:bg-gray-300" />
       <div className="flex flex-col items-center justify-center">
-        <h2 className="title-base mb-8">Projects</h2>
+        <h2 className="title-base mb-8 bg-gradient-to-b from-orange-500 to-orange-400 bg-clip-text text-transparent">
+          Projects
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {projects.map((project) => (
             <ProjectCard key={project.id} {...project} />
@@ -115,7 +124,9 @@ const Hero = ({ sectionSelected }) => {
       <div id="Experience" />
       <div className="border-t border-dashed w-11/12 my-12 bg-gray-600 dark:bg-gray-300" />
       <div className="flex flex-col items-center justify-center">
-        <h2 className="title-base">Experience</h2>
+        <h2 className="title-base mb-8 bg-gradient-to-b from-orange-500 to-orange-400 bg-clip-text text-transparent">
+          Experience
+        </h2>
         <p className="font-sans mt-2">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -158,21 +169,12 @@ const Hero = ({ sectionSelected }) => {
       <div id="Contact" />
       <div className="border-t border-dashed w-11/12 my-12 bg-gray-600 dark:bg-gray-300" />
       <div className="flex flex-col items-center justify-center">
-        <h2 className="title-base">Contact</h2>
-        <p className="font-sans mt-2">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum
-        </p>
+        <h2 className="title-base mb-8 bg-gradient-to-b from-orange-500 to-orange-400 bg-clip-text text-transparent">
+          Contact
+        </h2>
       </div>
 
-      <div className="flex justify-evenly py-8 lg:py-16 text-3xl w-full md:w-1/3">
+      <div className="flex justify-evenly text-3xl w-full md:w-1/3">
         {socials.map(({ id, link, icon }) => (
           <a
             href={link}
