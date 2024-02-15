@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import avatar from "../assets/avatar.svg";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../cards/ProjectCard";
 import Experience from "./Experience";
 import Contact from "./Contact";
 
@@ -95,6 +95,10 @@ const Hero = ({ sectionSelected }) => {
         doing, competitive by nature.
       </p>
 
+      <div id="Experience" />
+      <div className="border-t border-dashed w-11/12 my-12 bg-gray-600 dark:bg-gray-300" />
+      <Experience />
+
       <div id="Projects" />
       <div className="border-t border-dashed w-11/12 my-12 bg-gray-600 dark:bg-gray-300" />
       <div className="flex flex-col items-center justify-center">
@@ -107,9 +111,6 @@ const Hero = ({ sectionSelected }) => {
           ))}
         </div>
       </div>
-      <div id="Experience" />
-      <div className="border-t border-dashed w-11/12 my-12 bg-gray-600 dark:bg-gray-300" />
-      <Experience />
 
       <Contact />
     </section>

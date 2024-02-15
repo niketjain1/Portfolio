@@ -14,15 +14,15 @@ const Header = ({ darkMode, setDarkMode, setSection }) => {
         </button>
         <button
           className="mx-8 px-4 rounded-lg hover:bg-gray-50 py-2 hover:text-gray-900 dark:hover:bg-gray-800 dark:hover:text-white hover:shadow-xs"
-          onClick={() => setSection("Projects")}
-        >
-          Projects
-        </button>
-        <button
-          className="mx-8 px-4 rounded-lg hover:bg-gray-50 py-2 hover:text-gray-900 dark:hover:bg-gray-800 dark:hover:text-white hover:shadow-xs"
           onClick={() => setSection("Experience")}
         >
           Experience
+        </button>
+        <button
+          className="mx-8 px-4 rounded-lg hover:bg-gray-50 py-2 hover:text-gray-900 dark:hover:bg-gray-800 dark:hover:text-white hover:shadow-xs"
+          onClick={() => setSection("Projects")}
+        >
+          Projects
         </button>
         <button
           className="mx-8 px-4 rounded-lg hover:bg-gray-50 py-2 hover:text-gray-900 dark:hover:bg-gray-800 dark:hover:text-white hover:shadow-xs"
