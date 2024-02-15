@@ -92,7 +92,7 @@ const Hero = ({ sectionSelected }) => {
         complex real-world problems. As a kid I loved tinkering with things that
         were broken, figuring out how they worked, and fixing them again which
         led to my interest to be an engineer. <br />I believe in learning by
-        doing, competitive by nature
+        doing, competitive by nature.
       </p>
 
       <div id="Projects" />
