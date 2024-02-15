@@ -40,9 +40,7 @@ const ProjectCard = ({ title, description, githubLink, twitterLink }) => {
             >
               <FaGithub size={24} />
             </a>
-          ) : (
-            <FaGithub size={24} />
-          )}
+          ) : null}
           {twitterLink ? (
             <a
               href={twitterLink}
@@ -95,6 +93,36 @@ const ProjectCard = ({ title, description, githubLink, twitterLink }) => {
                     <p className="body-base-regular text-gray-500">
                       {description}
                     </p>
+                  </div>
+                  <div className="mt-4 flex items-center justify-center">
+                    {githubLink ? (
+                      <a
+                        href={githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={
+                          githubLink
+                            ? "hover:cursor-pointer"
+                            : "hover:cursor-not-allowed"
+                        }
+                      >
+                        <FaGithub size={24} />
+                      </a>
+                    ) : null}
+                    {twitterLink ? (
+                      <a
+                        href={twitterLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={
+                          twitterLink
+                            ? "ml-5 hover:cursor-pointer"
+                            : "hover:cursor-not-allowed"
+                        }
+                      >
+                        <FaTwitter size={24} />
+                      </a>
+                    ) : null}
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
