@@ -24,11 +24,11 @@ const ProjectCard = ({ title, description, githubLink, twitterLink }) => {
               {title}
             </h3>
           </div>
-          <p className="px-6 text-gray-600 dark:text-gray-300 body-base-medium max-h-100 text-multiline-ellipsis text-start w-100">
+          <p className="px-6 text-gray-600 dark:text-gray-300 body-base-medium max-h-100 text-multiline-ellipsis text-start w-84 md:w-100">
             {description}
           </p>
         </div>
-        <div className="p-6 flex items-center justify-center cursor-default bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 dark:bg-gray-700">
+        <div className="p-4 h-15 md:h-14 md:p-6 flex items-center justify-center cursor-default bg-gray-800 text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 dark:bg-gray-700">
           {githubLink ? (
             <a
               href={githubLink}

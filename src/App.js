@@ -15,7 +15,7 @@ function App() {
         setSection={setSection}
       />
 
-      <main className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white">
+      <main className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white min-w-screen min-h-screen">
         <Hero sectionSelected={section} />
       </main>
     </div>
