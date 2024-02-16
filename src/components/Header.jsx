@@ -11,7 +11,7 @@ const Header = ({ darkMode, setDarkMode, setSection }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileScreen(window.innerWidth <= 410);
+      setIsMobileScreen(window.innerWidth <= 440);
     };
 
     handleResize();
@@ -31,7 +31,7 @@ const Header = ({ darkMode, setDarkMode, setSection }) => {
   return (
     <header className="bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-white px-2 py-4 md:py-0 md:px-15 h-18 sticky top-0 z-50 shadow-xs">
       <nav className="flex flex-row gap-2 justify-between items-center md:p-5">
-        <img src={logo} alt="logo" className="w-10 h-10 rounded-full" />
+        <img src={logo} alt="logo" className="w-10 h-10 rounded-full mx-2" />
         {isMobileScreen ? (
           <>
             <button
