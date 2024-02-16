@@ -3,7 +3,7 @@ import NumansLogo from "../assets/NumansLogo.svg";
 
 const Experience = () => {
   return (
-    <div className="bg-gradient-to-r from-orange-400 to-rose-400 max-w-6xl rounded-lg p-8">
+    <div className="bg-gradient-to-r from-orange-400 to-rose-400 dark:bg-gradient-to-r dark:from-blue-300 max-w-6xl rounded-lg p-8">
       <div className="flex flex-col">
         <h2 className="title-base mb-8 text-white">Experience</h2>
         <div className="border border-gray-400 bg-gray-50 dark:to-gray-100 shadow-sm p-8 rounded-md">
