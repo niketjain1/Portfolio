@@ -82,7 +82,7 @@ const Hero = ({ sectionSelected }) => {
         <img
           src={avatar}
           alt="avatar"
-          className="w-60 h-60 md:w-60 md:h-60 object-cover object-top bg-gradient-to-br from-red-400 to-purple-500 rounded-full animate-shake"
+          className="w-60 h-60 md:w-60 md:h-60 object-cover object-top bg-gradient-to-br from-red-400 to-purple-500 rounded-full"
         />
       </div>
       <h2 className="text-red-600 title-base uppercase">Niket Jain</h2>
