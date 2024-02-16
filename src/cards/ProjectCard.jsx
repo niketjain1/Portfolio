@@ -25,17 +25,17 @@ const ProjectCard = ({
 
   return (
     <>
-      <div className="max-w-lg  cursor-pointer mx-auto overflow-hidden bg-white dark:bg-diver shadow-lg rounded-md transition-transform duration-300 transform hover:translate-y-[-10px] flex flex-col group">
+      <div className=" w-5/6 md:w-full md:max-w-lg  cursor-pointer mx-auto overflow-hidden bg-white dark:bg-diver shadow-lg rounded-md transition-transform duration-300 transform hover:translate-y-[-10px] flex flex-col group">
         <div onClick={openModal} className="flex-1">
           <div className="p-6 ">
             <h3 className="text-xl font-semibold mb-2 dark:text-white">
               {title}
             </h3>
           </div>
-          <p className="px-6 text-gray-600 dark:text-gray-300 body-base-medium max-h-100 text-multiline-ellipsis text-start w-84 md:w-100">
-            {description}
-          </p>
         </div>
+        <p className="px-6 text-gray-600 dark:text-gray-300 body-base-medium max-h-100 text-multiline-ellipsis text-start w-full">
+          {description}
+        </p>
         <div className="p-4 h-15 md:h-14 md:p-6 flex items-center justify-center cursor-default bg-gray-800 text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 dark:bg-gray-700">
           <SocialLink
             githubLink={githubLink}
