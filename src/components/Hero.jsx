@@ -34,7 +34,8 @@ const Hero = ({ sectionSelected }) => {
       Retinopathy disease that matched in accuracy (84%) with the state-of-the-art models designed specifically for
       this task. The new algorithm, however, can also be used in other biomedical applications
       Packaged the algorithm as a plugin inside ImageJ - an open-source JAVA-based image processing software`,
-      githubLink: "",
+      pdfLink:
+        "https://drive.google.com/file/d/1OlORNd70pdxSC9VceFVNjmWhURjeJ5gK/view?usp=sharing",
     },
     {
       id: 3,
@@ -81,7 +82,7 @@ const Hero = ({ sectionSelected }) => {
         <img
           src={avatar}
           alt="avatar"
-          className="w-60 h-60 md:w-60 md:h-60 object-cover object-top bg-gradient-to-br from-red-400 to-purple-500 rounded-full"
+          className="w-60 h-60 md:w-60 md:h-60 object-cover object-top bg-gradient-to-br from-red-400 to-purple-500 rounded-full animate-shake"
         />
       </div>
       <h2 className="text-red-600 title-base uppercase">Niket Jain</h2>
