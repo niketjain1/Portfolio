@@ -13,7 +13,7 @@ const Experience = () => {
               Software Developer Intern at Numans
             </div>
             <div className="ml-auto text-gray-800 dark:text-gray-800">
-              June 2021 - August 2021
+              June 2023 - February 2024
             </div>
           </div>
           <div className="mb-3 text-start">
