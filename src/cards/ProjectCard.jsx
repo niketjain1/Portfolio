@@ -3,8 +3,16 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { FaGithub } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa6";
+import { IoDocumentTextSharp } from "react-icons/io5";
+import SocialLink from "../components/SocialLink";
 
-const ProjectCard = ({ title, description, githubLink, twitterLink }) => {
+const ProjectCard = ({
+  title,
+  description,
+  githubLink,
+  twitterLink,
+  pdfLink,
+}) => {
   let [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => {
@@ -29,32 +37,11 @@ const ProjectCard = ({ title, description, githubLink, twitterLink }) => {
           </p>
         </div>
         <div className="p-4 h-15 md:h-14 md:p-6 flex items-center justify-center cursor-default bg-gray-800 text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 dark:bg-gray-700">
-          {githubLink ? (
-            <a
-              href={githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={
-                githubLink ? "hover:cursor-pointer" : "hover:cursor-not-allowed"
-              }
-            >
-              <FaGithub size={24} />
-            </a>
-          ) : null}
-          {twitterLink ? (
-            <a
-              href={twitterLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={
-                twitterLink
-                  ? "ml-5 hover:cursor-pointer"
-                  : "hover:cursor-not-allowed"
-              }
-            >
-              <FaTwitter size={24} />
-            </a>
-          ) : null}
+          <SocialLink
+            githubLink={githubLink}
+            twitterLink={twitterLink}
+            pdfLink={pdfLink}
+          />
         </div>
       </div>
       <Transition appear show={isOpen} as={Fragment}>
@@ -95,34 +82,11 @@ const ProjectCard = ({ title, description, githubLink, twitterLink }) => {
                     </p>
                   </div>
                   <div className="mt-4 flex items-center justify-center">
-                    {githubLink ? (
-                      <a
-                        href={githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={
-                          githubLink
-                            ? "hover:cursor-pointer"
-                            : "hover:cursor-not-allowed"
-                        }
-                      >
-                        <FaGithub size={24} />
-                      </a>
-                    ) : null}
-                    {twitterLink ? (
-                      <a
-                        href={twitterLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={
-                          twitterLink
-                            ? "ml-5 hover:cursor-pointer"
-                            : "hover:cursor-not-allowed"
-                        }
-                      >
-                        <FaTwitter size={24} />
-                      </a>
-                    ) : null}
+                    <SocialLink
+                      githubLink={githubLink}
+                      twitterLink={twitterLink}
+                      pdfLink={pdfLink}
+                    />
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
