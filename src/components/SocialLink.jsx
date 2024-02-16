@@ -22,7 +22,7 @@ const SocialLinks = ({ githubLink, twitterLink, pdfLink }) => {
                 socialLink.link
                   ? "hover:cursor-pointer"
                   : "hover:cursor-not-allowed"
-              } ml-${index === 0 ? "0" : "5"}`}
+              } flex flex-row ml-${index === 0 ? "0" : "5"}`}
             >
               {socialLink.icon}
             </a>
