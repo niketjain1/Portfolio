@@ -120,7 +120,7 @@ const Header = ({ darkMode, setDarkMode, setSection }) => {
               Experience
             </button>
             <button
-              className="px-2 md:mx-8 md:px-4rounded-lg hover:bg-gray-50 py-2 hover:text-gray-900 dark:hover:bg-gray-800 dark:hover:text-white hover:shadow-xs"
+              className="px-2 md:mx-8 md:px-4 rounded-lg hover:bg-gray-50 py-2 hover:text-gray-900 dark:hover:bg-gray-800 dark:hover:text-white hover:shadow-xs"
               onClick={() => setSection("Projects")}
             >
               Projects
