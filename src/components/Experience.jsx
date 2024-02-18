@@ -1,21 +1,36 @@
 import React from "react";
 import NumansLogo from "../assets/NumansLogo.svg";
 
-const Experience = () => {
+const Experience = ({ isMobileScreen }) => {
   return (
     <div className="bg-gradient-to-r from-orange-400 to-rose-400 dark:bg-gradient-to-r dark:from-blue-300 dark:border dark:border-gray-400 max-w-6xl rounded-lg p-8">
       <div className="flex flex-col">
         <h2 className="title-base mb-8 text-white">Experience</h2>
-        <div className="border border-gray-400 bg-gray-50 dark:to-gray-100 shadow-sm p-8 rounded-md">
-          <div className="flex items-center mb-2">
-            <img src={NumansLogo} alt="NumansLogo" />
-            <div className="subtitle-base ml-5 text-gray-800 dark:text-gray-800">
-              Software Developer Intern at Numans
+        <div className="border border-gray-400 bg-gray-50 dark:to-gray-100 shadow-sm p-4 md:p-8 rounded-md">
+          {isMobileScreen ? (
+            <>
+              <div className="flex items-start mb-4">
+                <img src={NumansLogo} alt="NumansLogo" />
+                <div className="body-base-semibold text-start ml-4 text-gray-800 ">
+                  Software Developer Intern at Numans
+                </div>
+                <div className="ml-auto body-base-regular text-gray-800 ">
+                  June 2023 - February 2024
+                </div>
+              </div>
+            </>
+          ) : (
+            <div className="flex items-start mb-2">
+              <img src={NumansLogo} alt="NumansLogo" />
+              <div className="subtitle-base ml-5 text-gray-800 ">
+                Software Developer Intern at Numans
+              </div>
+              <div className="ml-auto text-gray-800">
+                June 2023 - February 2024
+              </div>
             </div>
-            <div className="ml-auto text-gray-800 dark:text-gray-800">
-              June 2023 - February 2024
-            </div>
-          </div>
+          )}
+          <div className="border-b border-dashed my-4" />
           <div className="mb-3 text-start">
             <strong className="text-rose-600 dark:text-gray-700 underline">
               Core Development on Device History Feature

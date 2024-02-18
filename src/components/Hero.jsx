@@ -4,7 +4,7 @@ import ProjectCard from "../cards/ProjectCard";
 import Experience from "./Experience";
 import Contact from "./Contact";
 
-const Hero = ({ sectionSelected }) => {
+const Hero = ({ sectionSelected, isMobileScreen }) => {
   useEffect(() => {
     const element = document.getElementById(sectionSelected);
     if (element) {
@@ -98,7 +98,7 @@ const Hero = ({ sectionSelected }) => {
 
       <div id="Experience" />
       <div className="border-t border-dashed w-11/12 my-12 bg-gray-600 dark:bg-gray-300" />
-      <Experience />
+      <Experience isMobileScreen={isMobileScreen} />
 
       <div id="Projects" />
       <div className="border-t border-dashed w-11/12 my-12 bg-gray-600 dark:bg-gray-300" />

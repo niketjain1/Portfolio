@@ -1,27 +1,12 @@
 import { MdNightsStay, MdWbSunny } from "react-icons/md";
 import logo from "../assets/logo.jpg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { IoIosArrowDown } from "react-icons/io";
 import { Fragment } from "react";
 
-const Header = ({ darkMode, setDarkMode, setSection }) => {
-  const [isMobileScreen, setIsMobileScreen] = useState(false);
+const Header = ({ darkMode, setDarkMode, setSection, isMobileScreen }) => {
   const [selectedSection, setSelectedSection] = useState("Home");
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobileScreen(window.innerWidth <= 440);
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const handleSectionClick = (section) => {
     setSection(section);
