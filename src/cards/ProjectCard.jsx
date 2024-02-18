@@ -1,9 +1,6 @@
 import React from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
-import { FaGithub } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa6";
-import { IoDocumentTextSharp } from "react-icons/io5";
 import SocialLink from "../components/SocialLink";
 
 const ProjectCard = ({
