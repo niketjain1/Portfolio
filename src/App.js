@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import "./styles/main.css";
 import { useState } from "react";
-import Hero from "./components/Hero";
+import Main from "./components/Main";
 import { useEffect } from "react";
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
       />
 
       <main className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white min-w-screen min-h-screen">
-        <Hero sectionSelected={section} isMobileScreen={isMobileScreen} />
+        <Main sectionSelected={section} isMobileScreen={isMobileScreen} />
       </main>
     </div>
   );
