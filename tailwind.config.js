@@ -118,6 +118,9 @@ module.exports = {
         600: "#E11D48",
         700: "#BE123C",
       },
+      teal: {
+        500: "#009688",
+      },
       lavender: {
         50: "#FFF5FD",
         100: "#FFE1F4",
