@@ -22,8 +22,11 @@ const ProjectCard = ({
 
   return (
     <>
-      <div className=" w-5/6 md:w-full md:max-w-lg  cursor-pointer mx-auto overflow-hidden bg-white dark:bg-diver shadow-lg rounded-md transition-transform duration-300 transform hover:translate-y-[-10px] flex flex-col group">
-        <div onClick={openModal} className="flex-1">
+      <div
+        className=" w-5/6 md:w-full md:max-w-lg  cursor-pointer mx-auto overflow-hidden bg-white dark:bg-diver shadow-lg rounded-md transition-transform duration-300 transform hover:translate-y-[-10px] flex flex-col group"
+        onClick={openModal}
+      >
+        <div className="flex-1">
           <div className="p-6 ">
             <h3 className="text-xl font-semibold mb-2 dark:text-white">
               {title}
