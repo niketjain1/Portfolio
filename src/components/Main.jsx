@@ -3,6 +3,7 @@ import avatar from "../assets/avatar.svg";
 import ProjectCard from "../cards/ProjectCard";
 import Experience from "./Experience";
 import Contact from "./Contact";
+import Avatar from "./Avatar";
 
 const Hero = ({ sectionSelected, isMobileScreen }) => {
   useEffect(() => {
@@ -78,13 +79,7 @@ const Hero = ({ sectionSelected, isMobileScreen }) => {
       className="min-h-screen flex flex-col justify-start items-center p-5 text-center"
       id="Home"
     >
-      <div className="py-3 mt-5">
-        <img
-          src={avatar}
-          alt="avatar"
-          className="w-60 h-60 md:w-60 md:h-60 object-cover object-top bg-gradient-to-br from-red-400 to-purple-500 rounded-full"
-        />
-      </div>
+      <Avatar />
       <h2 className="text-red-600 title-base uppercase">Niket Jain</h2>
       <h1 className="py-3 subtitle-lg">Software Engineer</h1>
       <p className="subtitle-base w-11/12 text-gray-500">
