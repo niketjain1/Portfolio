@@ -54,12 +54,14 @@ const Experience = ({ isMobileScreen }) => {
             </strong>
             <ul className="list-disc list-inside font-fakt dark:text-gray-900">
               <li>
-                Engineered a streamlined Slack notification system using AWS
-                Lambda, reducing Turnaround Time (TAT) by an impressive 30%.
+                Engineered a refined Slack notification system using AWS Lambda,
+                reducing order fulfillment Turnaround Time (TAT) by{" "}
+                <span className="font-bold">30%</span>.
               </li>
               <li>
-                Significantly improved operational workflows, leading to quicker
-                top-ups and shipment processes.
+                This streamlined communication and ensured timely updates to the
+                operations team, leading to more efficient top-up and shipment
+                processes.
               </li>
             </ul>
           </div>
@@ -69,16 +71,18 @@ const Experience = ({ isMobileScreen }) => {
             </strong>
             <ul className="list-disc list-inside font-fakt dark:text-gray-900">
               <li>
-                Led efforts to boost product performance, achieving a 25%
-                reduction in data retrieval times. Implemented the refinement of
-                GraphQL queries and restructuring of API calls using NestJS and
-                TypeScript.
+                Led efforts to boost product performance, achieving a{" "}
+                <span className="font-bold">25%</span> reduction in data
+                retrieval times. Implemented the refinement of GraphQL queries
+                and restructuring of API calls using NestJS and TypeScript.
               </li>
               <li>
                 Introduced strategic caching mechanisms with Apollo client,
-                seamlessly integrated with NextJS. This resulted in an
-                impressive 20% improvement in latency, contributing to a more
-                responsive user experience.
+                seamlessly integrated with NextJS. This eliminated unnecessary
+                API calls, achieving an impressive{" "}
+                <span className="font-bold">20%</span> reduction in page load
+                latency, significantly contributing to a more responsive user
+                experience.
               </li>
             </ul>
           </div>
