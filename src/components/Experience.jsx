@@ -20,13 +20,20 @@ const Experience = ({ isMobileScreen }) => {
               </div>
             </>
           ) : (
-            <div className="flex items-start mb-2">
-              <img src={NumansLogo} alt="NumansLogo" />
-              <div className="subtitle-base ml-5 text-gray-800 ">
-                Software Developer Intern at Numans
+            <div className="flex flex-col">
+              <div className="flex flex-row items-start">
+                <img src={NumansLogo} alt="NumansLogo" />
+                <div className="subtitle-base ml-5 text-gray-800 ">
+                  Software Developer Intern at Numans
+                </div>
+                <div className="ml-auto text-gray-800">
+                  June 2023 - February 2024
+                </div>
               </div>
-              <div className="ml-auto text-gray-800">
-                June 2023 - February 2024
+              <div className="body-base-regular text-start ml-13.5 text-gray-800">
+                Helping businesses improve the employee experience by
+                streamlining onboarding, offboarding, engagement, and other HR
+                processes
               </div>
             </div>
           )}
