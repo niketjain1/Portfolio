@@ -1,5 +1,12 @@
   export const projects = [
     {
+      id: 0,
+      title: "GmailGenie",
+      description: `GmailGenie is a robust backend application designed to leverage the power of NestJS, Google's Gmail API, OpenAI, and BullMQ with Redis to automate email processing. This application simplifies managing and responding to emails for professionals and businesses, featuring automatic authentication via Google, retrieval of recent emails, and AI-driven response generation. The scheduler, powered by BullMQ, runs tasks every minute, ensuring prompt email interactions and operations.
+      `,
+      githubLink: "https://github.com/niketjain1/GmailGenie",
+    },
+    {
       id: 1,
       title: "Bloggerly - blogging web application",
       description: `
