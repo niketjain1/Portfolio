@@ -12,7 +12,7 @@ const Experience = ({ isMobileScreen }) => {
               <div className="flex items-start mb-4">
                 <img src={NumansLogo} alt="NumansLogo" />
                 <div className="body-base-semibold text-start ml-4 text-gray-800 ">
-                  Software Developer Intern at Numans
+                  Software Developer at Numans
                 </div>
                 <div className="ml-auto body-base-regular text-gray-800 ">
                   June 2023 - February 2024
@@ -24,7 +24,7 @@ const Experience = ({ isMobileScreen }) => {
               <div className="flex flex-row items-start">
                 <img src={NumansLogo} alt="NumansLogo" />
                 <div className="subtitle-base ml-5 text-gray-800 ">
-                  Software Developer Intern at Numans
+                  Software Developer at Numans
                 </div>
                 <div className="ml-auto text-gray-800">
                   June 2023 - February 2024
