@@ -1,9 +1,9 @@
-import { MdNightsStay, MdWbSunny } from "react-icons/md";
 import logo from "../assets/logo.jpg";
 import { useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { IoIosArrowDown } from "react-icons/io";
 import { Fragment } from "react";
+import { ToggleButton } from "./Button";
 
 const Header = ({ darkMode, setDarkMode, setSection, isMobileScreen }) => {
   const [selectedSection, setSelectedSection] = useState("Home");
@@ -116,13 +116,7 @@ const Header = ({ darkMode, setDarkMode, setSection, isMobileScreen }) => {
         >
           Resume
         </a>
-        <button onClick={() => setDarkMode(!darkMode)} className="ml-2">
-          {darkMode ? (
-            <MdWbSunny className="body-base-medium cursor-pointer" />
-          ) : (
-            <MdNightsStay className="body-base-medium cursor-pointer" />
-          )}
-        </button>
+        <ToggleButton setDarkMode={setDarkMode} darkMode={darkMode} />
       </nav>
     </header>
   );
